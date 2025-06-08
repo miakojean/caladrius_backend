@@ -160,5 +160,6 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:8100",  # Exemple pour le serveur de développement Ionic (port par défaut)
     "https://caladriustech.com",  # Exemple pour votre application Ionic en production
     # Ajoutez d'autres origines autorisées ici
-    "http://localhost:5173"
+    "http://localhost:5173",
+    "https://caladrius-backend.onrender.com"
 ]
