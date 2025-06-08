@@ -26,7 +26,7 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", cast=bool)
 
-ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOSTS', default='127.0.0.1').split(',')
+ALLOWED_HOSTS = ["caladrius-backend.onrender.com"]
 
 
 # Application definition
@@ -161,5 +161,5 @@ CORS_ALLOWED_ORIGINS = [
     "https://caladriustech.com",  # Exemple pour votre application Ionic en production
     # Ajoutez d'autres origines autorisées ici
     "http://localhost:5173",
-    "https://caladrius-backend.onrender.com"
+    "caladrius-backend.onrender.com"
 ]
