@@ -1,0 +1,27 @@
+# Core
+Django==4.2.*  # Bonne pratique d'utiliser .* pour les patches
+python-decouple==3.8  # Essentiel pour la gestion des configurations
+
+# Database
+psycopg2-binary==2.9.7  # OK pour le développement, pour la production préférez psycopg2 (sans -binary)
+# Alternative pour la production: psycopg2==2.9.7 (nécessite compilateurs)
+psycopg2
+
+# REST API
+djangorestframework==3.14.0
+django-cors-headers==4.3.1  # Important pour les API frontend
+
+# Media
+Pillow==10.1.0  # Essentiel pour le traitement d'images
+
+# Data analysis (si nécessaire)
+pandas==2.1.1  # Lourd, à garder seulement si vraiment utile
+numpy==1.24.0  # Version souvent compatible avec Pandas
+
+# Production
+gunicorn==21.2.0  # Serveur WSGI recommandé
+whitenoise==6.5.0  # Excellent pour servir les fichiers statiques
+
+# Suggestions d'ajouts :
+django-environ==0.11.2  # Alternative à python-decouple pour une meilleure intégration avec les connexions DB
+python-dotenv==1.0.0  # Complément utile pour la gestion des variables d'environnement

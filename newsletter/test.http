@@ -1,0 +1,26 @@
+POST http://127.0.0.1:8000/newsletter/subscribers/ 
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "sinistre12@gmail.com"
+}
+
+POST http://127.0.0.1:8000/contact/ 
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "johndoe@gmail.com",
+  "message" : "Hello, this is a test message."
+}
+
+POST http://127.0.0.1:8000/contact/service/
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "email": "sinistre12@gmail.com",
+  "message": "I would like to know more about your services.",
+  "services": "Mobile App Development"
+}

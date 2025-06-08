@@ -1,0 +1,105 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+.DS_Store
+dist
+dist-ssr
+coverage
+*.local
+
+/cypress/videos/
+/cypress/screenshots/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.tsbuildinfo
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+env/
+envs/
+
+# Django-specific
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-*
+media/  # Si tu ne versionnes pas les médias
+static/ # Si tu laisses Django gérer les fichiers statiques en dev
+
+# Static files collected from apps ('manage.py collectstatic')
+staticfiles/
+
+# Uploaded files (si tu en as)
+uploads/
+
+# IDE-specific files
+.idea/
+*.iml
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Python distribution / installation
+build/
+develop-eggs/
+dist/
+eggs/
+lib64/
+sdist/
+setup.py
+*.egg-info/
+MANIFEST
+
+# Packages
+parts/
+wheels/
+pip-log.txt
+pip-delete-this.txt
+
+# Jupyter Notebook related (si tu en utilises)
+.ipynb_checkpoints/
+
+# Docker related (si tu utilises Docker)
+docker-compose.override.yml
+.dockerenv
+.env
+
+# Git specific
+.gitattributes
+.gitkeep
+
+# Logs and temporary files
+*.swp
+*.bak
+*.tmp
